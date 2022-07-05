@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios js</title>
+
+    <link href="css/style.eventos.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+    
+
+    <br>
+    <br><br>
+
+
+   
+       <h1> Que opinas de la pizza </h1>
+       
+       
+
+    </div>
+    <form id="formulario"><br>
+        <br>
+        <br>
+        <br>
+        
+        
+    Pon tu pizza favorita <br><br> <input type="text "  name="nombre" value=""/> <br>
+        <br>
+Recomieda una pizza <br> <br><input type="text" name="apellido" value=""/> <br> 
+<br>
+
+Que tanto te gustan las pizzas<br> <br><input type="text" name="apellido" value=""/><br> 
+<br>
+
+Tienes alguna pizza favorita<br> <br><input type="text" name="Edad" value=""/> <br> 
+<br>
+Donde es tu lugar favorito para comer pizza <br><br><input type="text" name="correo" value=""/><br> 
+<br>
+
+
+<div id="valores"></div>
+
+
+</form>
+<button onclick="mostrarvalores()">mostrar</button> 
+<br>
+<br>
+
+
+
+
+
+
+
+
+   <script>
+
+function mostrarvalores(){
+const f= document.forms['formulario']
+let texto = ''
+for(item of f){
+texto += item.value + '<br/><br/>'
+}
+console.log(texto)
+document.getElementById('valores').innerHTML = texto
+
+}
+
+
+
+</script>
+    
+</body>
+</html>

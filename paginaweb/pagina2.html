@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMERA PAGINA</title>
+    <link href="css/style.pagina2.css" rel="stylesheet"/>
+
+</head>
+
+    <body>
+
+        <div><img src="images/logo en centro.jpg"/></div>
+        <br />
+        
+    
+        <h1 id="tituloH1">Dejanos tus comentarios de la pizzeria</h1>
+        <br/>
+             <br/>
+        <p>O platicanos si ya has preparado alguna pizza</p>
+        <br/>
+        <br/>
+        <form id="formulario">
+            ¿Te gusto nuestra pizza?: <br><input type="text" id="name" placeholder="Escribe tu comentario"/>
+            <br/>
+            <br/>
+            ¿Cual es tu pizza favorita?: <br><input type="text" id="name" placeholder="Escribe tu comentario"/>
+            <br/>
+            <br/>
+            ¿Sabes preparar pizaza?: <br> <input type="text" id="name" placeholder="Escribe tu comentario"/>
+            <br/>
+            <br/>
+            ¿Haz pensado en algun dia trabajar con nosotros?: <br> <input type="text" id="name" placeholder="Escribe tu comentario"/>
+            <br/>
+            <br/>
+            <input type="submit" value="Enviar"/>
+            </form>
+            <script>
+                const form1 = document.getElementById("formulario")
+                form1.addEventListener("focus", (evento)=>{
+                 evento.target.style.background="#2bd1fc"
+                }, true)
+                form1.addEventListener("blur", (evento)=>{
+                evento.target.style.background="white"
+                }, true)
+                form1.onmouseover("focus", (evento)=>{
+                 evento.target.style.background="red"
+                }, true)
+            </script>
+             <br/>
+             <br/>
+
+
+
+
+      </body>
+    </html>
+  
+
+</body>
+</html>
